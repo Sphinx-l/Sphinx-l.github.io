@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      float: left;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    body {
+      background-color: #1a2026;
+    }
+
+    .head {
+      width: 100%;
+      height: 100px;
+      background-color: #707579;
+    }
+
+    .body {
+      height: 1400px;
+      background-color: #161a20;
+    }
+
+    .body .left {
+      float: left;
+      height: 1400px;
+      width: 20%;
+      background-color: #1a2026;
+    }
+
+    .body .left .content {
+      margin-left: 70px;
+      margin-right: 70px;
+      background-color: #161a20;
+      height: 100%;
+    }
+
+    .body .left .content img {
+      margin-left: 55px;
+      margin-bottom: 150px;
+    }
+
+    .body .right {
+      float: left;
+      width: 80%;
+      height: 1400px;
+    }
+
+    .body .left a {
+      text-decoration: none;
+      color: #fff5d4;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      margin-left: 80px;
+    }
+
+    .body .right ul {
+      width: 100%;
+      background-color: #fff;
+    }
+    .body .right p {
+      width: 600px;
+      margin-left: 100px;
+      margin-top: 100px;
+    }
+    .talent {
+      display: none;
+    }
+    .talent li {
+      background-color: black;
+      margin: 30px;
+      overflow: hidden;
+      width: 100%;
+    }
+    .talent li img {
+      float: left;
+      margin-right: 15px;
+    }
+    .skill {
+      display: none;
+    }
+    .talent {
+      display: none;
+    }
+    .equipment {
+      display: none;
+    }
+    .talent i {
+      float: right;
+      text-align: center;
+      color: #fff;
+      margin-right: 250px;
+      line-height: 70px;
+      height: 70px;
+    }
+    .talent .big {
+      width: 56px;
+      margin-top: 7px;
+    }
+    .talent .middle {
+      width: 40px;
+      margin-top: 15px;
+    }
+    .talent .small {
+      margin-top: 20px;
+      width: 30px;
+    }
+    .equipment .content {
+      width: 500px;
+      height: 500px;
+      background-color: #b59758;
+    }
+    .equipment .equipmenthead {
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px grey solid;
+    }
+    .ehleft {
+      font-size: 20px;
+      text-align: center;
+      line-height: 50px;
+      color: #ede4d1;
+      height: 50px;
+    }
+    .ehright {
+      font-size: 15px;
+      margin-left: 40px;
+      float: right;
+      color: #4d514d;
+      height: 50px;
+      line-height: 50px;
+    }
+    .listdetail {
+      margin-top: 30px;
+    }
+    .listdetail img {
+      margin-left: 20px;
+    }
+    .equipment .onstage {
+      color: #1db7a6;
+      font-weight: 600;
+      float: right;
+      margin-top: 30px;
+    }
+    .equipment .win {
+      color: #957c4d;
+      font-weight: 600;
+      margin-right: 10px;
+      float: right;
+      margin-top: 30px;
+    }
+    .equipment .content {
+      float: left;
+      margin-left: 100px;
+      margin-top: 40px;
+    }
+  </style>
+
+  <body>
+    <div class="head">
+    </div>
+    <div class="body">
+      <div class="left">
+        <div class="content">
+          <img src="images/暗裔剑魔.png" alt="" />
+          <p><a href="" class="s">技能介绍</a></p>
+          <p><a href="" class="t">天赋</a></p>
+          <p><a href="" class="e">出装推荐</a></p>
+          <p><a href="">皮肤详情</a></p>
+        </div>
+      </div>
+      <div class="right skill" id="skill">
+        <ul>
+          <li style="margin-left: 80px">
+            <a href="javascript:;"><img src="images/暗裔剑魔P.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="images/暗裔剑魔Q.png" alt="" /></a>
+          </li>
+
+          <li>
+            <a href="javascript:;"><img src="images/暗裔剑魔W.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="javascript:;"><img src="images/暗裔剑魔E.png" alt="" /></a>
+          </li>
+
+          <li>
+            <a href="javascript:;"><img src="images/暗裔剑魔R.png" alt="" /></a>
+          </li>
+        </ul>
+        <p style="color: #fff">
+          亚托克斯的攻击造成额外的(5%-12%)最大生命值物理伤害并回复100%实际伤害值的生命值，对小兵时降低至25%，这个效果有（24-12）秒冷却时间。对英雄和大型野怪进行的攻击和技间缩短2秒。用暗裔之刃的边缘命中时会使这个效果的冷却时间缩短4秒对野怪最多造成100伤害。用技能命中多个目标时也仅会缩短一次冷却时间。
+        </p>
+      </div>
+      <div class="right talent" id="talent">
+        <ul>
+          <li>
+            <img src="images/精密.png" alt="" class="big" />
+            <img src="images/征服者.png" alt="" class="big" />
+            <img src="images/凯旋.png" alt="" class="middle" />
+            <img src="images/韧性.png" alt="" class="middle" />
+            <img
+              src="images/坚毅不倒.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/坚决.png" alt="" class="middle" />
+            <img src="images/复苏之风.png" alt="" class="middle" />
+            <img
+              src="images/复苏.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/适应之力.png" alt="" class="small" />
+            <img src="images/适应之力.png" alt="" class="small" />
+            <img src="images/护甲.png" alt="" class="small" />
+            <i>登场率:23.02%</i>
+            <i>胜率:49.02%</i>
+          </li>
+          <li>
+            <img src="images/精密.png" alt="" class="big" />
+            <img src="images/征服者.png" alt="" class="big" />
+            <img src="images/凯旋.png" alt="" class="middle" />
+            <img src="images/韧性.png" alt="" class="middle" />
+            <img
+              src="images/坚毅不倒.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/坚决.png" alt="" class="middle" />
+            <img src="images/复苏之风.png" alt="" class="middle" />
+            <img
+              src="images/骸骨镀层.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/适应之力.png" alt="" class="small" />
+            <img src="images/适应之力.png" alt="" class="small" />
+            <img src="images/护甲.png" alt="" class="small" />
+            <i>登场率:11.79%</i>
+            <i>胜率:49.05%</i>
+          </li>
+          <li>
+            <img src="images/精密.png" alt="" class="big" />
+            <img src="images/征服者.png" alt="" class="big" />
+            <img src="images/凯旋.png" alt="" class="middle" />
+            <img src="images/韧性.png" alt="" class="middle" />
+            <img
+              src="images/坚毅不倒.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/主宰.png" alt="" class="middle" />
+            <img src="images/寻宝猎人.png" alt="" class="middle" />
+            <img
+              src="images/猛然冲击.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/攻速.png" alt="" class="small" />
+            <img src="images/适应之力.png" alt="" class="small" />
+            <img src="images/护甲.png" alt="" class="small" />
+            <i>登场率:1.86%</i>
+            <i>胜率:43.66%</i>
+          </li>
+          <li>
+            <img src="images/精密.png" alt="" class="big" />
+            <img src="images/征服者.png" alt="" class="big" />
+            <img src="images/凯旋.png" alt="" class="middle" />
+            <img src="images/韧性.png" alt="" class="middle" />
+            <img
+              src="images/坚毅不倒.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/主宰.png" alt="" class="middle" />
+            <img src="images/寻宝猎人.png" alt="" class="middle" />
+            <img
+              src="images/猛然冲击.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/适应之力.png" alt="" class="small" />
+            <img src="images/适应之力.png" alt="" class="small" />
+            <img src="images/护甲.png" alt="" class="small" />
+            <i>登场率:0.1%</i>
+            <i>胜率:51.23%</i>
+          </li>
+          <li>
+            <img src="images/巫术.png" alt="" class="big" />
+            <img src="images/奥术彗星.png" alt="" class="big" />
+            <img src="images/灵光披风.png" alt="" class="middle" />
+            <img src="images/超然.png" alt="" class="middle" />
+            <img
+              src="images/焦灼.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/主宰.png" alt="" class="middle" />
+            <img src="images/寻宝猎人.png" alt="" class="middle" />
+            <img
+              src="images/猛然冲击.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/适应之力.png" alt="" class="small" />
+            <img src="images/适应之力.png" alt="" class="small" />
+            <img src="images/护甲.png" alt="" class="small" />
+            <i>登场率:0.17%</i>
+            <i>胜率:46.91%</i>
+          </li>
+        </ul>
+      </div>
+      <div class="right equipment">
+        <div class="content">
+          <div class="equipmenthead">
+            <span class="ehleft">出门装推荐</span>
+            <span class="ehright">登场率</span>
+            <span class="ehright">胜率</span>
+          </div>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/多兰盾.png" alt="" />
+                <img src="images/生命药水.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/多兰剑.png" alt="" />
+                <img src="images/生命药水.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+          </div>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/多兰剑.png" alt="" />
+                <img src="images/生命药水.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/多兰剑.png" alt="" />
+                <img src="images/生命药水.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="equipmenthead">
+            <span class="ehleft">神话装推荐</span>
+            <span class="ehright">登场率</span>
+            <span class="ehright">胜率</span>
+          </div>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/星蚀.png" alt="" />
+                <img src="images/大饮魔刀.png" alt="" />
+                <img src="images/赛瑞尔达的怨恨.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/星蚀.png" alt="" />
+                <img src="images/赛瑞尔达的怨恨.png" alt="" />
+                <img src="images/大饮魔刀.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+          </div>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/星蚀.png" alt="" />
+                <img src="images/大饮魔刀.png" alt="" />
+                <img src="images/黑切.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/星蚀.png" alt="" />
+                <img src="images/赛瑞尔达的怨恨.png" alt="" />
+                <img src="images/大饮魔刀.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="equipmenthead">
+            <span class="ehleft">鞋子推荐</span>
+            <span class="ehright">登场率</span>
+            <span class="ehright">胜率</span>
+          </div>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/护甲鞋.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/水银鞋.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+          </div>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/冷却鞋.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="equipmenthead">
+            <span class="ehleft">其余装备</span>
+            <span class="ehright">登场率</span>
+            <span class="ehright">胜率</span>
+          </div>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="绿甲.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+          </div>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="复活甲.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="血手.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var skill=document.querySelector(".left").querySelector('.s');
+var talent=document.querySelector(".left").querySelector('.t');
+var equipment=document.querySelector(".left").querySelector('.e');
+var skilldiv=document.querySelector('.skill');
+var talentdiv=document.querySelector('.talent');
+var equipmentdiv=document.querySelector('.equipment');
+skill.addEventListener('mouseover',function(){
+  skilldiv.style.display="block";
+  talentdiv.style.display='none';
+  equipmentdiv.style.display="none";
+})
+
+talent.addEventListener('mouseover',function(){
+  skilldiv.style.display="none";
+  talentdiv.style.display="block";
+  equipmentdiv.style.display="none";
+})
+equipment.addEventListener('mouseover',function(){
+  skilldiv.style.display="none";
+  talentdiv.style.display="none";
+  equipmentdiv.style.display="block";
+})
+    </script>
+  </body>
+</html>

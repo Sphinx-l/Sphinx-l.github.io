@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style: none;
+      }
+      ul {
+        margin-top: 100px;
+        margin-left: 400px;
+      }
+      input {
+        margin-left: 20px;
+      }
+      strong {
+        font-size: 24px;
+        color: aqua;
+      }
+      p {
+        font-size: 16px;
+        color: red;
+      }
+      textarea {
+        width: 300px;
+        height: 100px;
+        display: block;
+      }
+      button {
+        width: 330px;
+        height: 40px;
+        margin-top: 40px;
+        margin-left: 40%;
+      }
+      .end {
+        width: 100%;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <strong>英雄名字</strong>
+
+        <input type="text" />
+        <input type="text" />
+      </li>
+      <li>
+        <strong>英雄图片</strong>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </li>
+      <li>
+        <strong>定位</strong>
+        <input type="radio" name="position"/>战士 <input type="radio" name="position"/>法师
+        <input type="radio" name="position"/>刺客 <input type="radio" name="position"/>射手
+        <input type="radio" name="position"/>辅助
+      </li>
+      <li>
+        <strong>可选位置</strong>
+        <input type="checkbox" />上单 <input type="checkbox" />中单
+        <input type="checkbox" />adc <input type="checkbox" />辅助
+        <input type="checkbox" />打野
+      </li>
+      <li>
+        <strong>技能介绍</strong>
+        <br />
+        P
+        <br />
+        <p>技能图标</p>
+        <input type="text" />
+        <p>技能描述</p>
+        <textarea name="" id=""></textarea>
+        Q
+        <br />
+        <p>技能图标</p>
+        <input type="text" />
+        <p>技能描述</p>
+        <textarea name="" id=""></textarea>
+        W
+        <br />
+        <p>技能图标</p>
+        <input type="text" />
+        <p>技能描述</p>
+        <textarea name="" id=""></textarea>
+        E
+        <br />
+        <p>技能图标</p>
+        <input type="text" />
+        <p>技能描述</p>
+        <textarea name="" id=""></textarea>
+        R
+        <br />
+        <p>技能图标</p>
+        <input type="text" />
+        <p>技能描述</p>
+        <textarea name="" id=""></textarea>
+      </li>
+      <li>
+        <strong>符文</strong>
+        <p>精密</p>
+        <input type="radio" name="jm0"/>强攻 <input type="radio" name="jm0" />致命节奏
+        <input type="radio" name="jm0"/>征服者 <input type="radio" name="jm0"/>迅捷步法
+        <br />
+        <input type="radio" name="jm1" />气定神闲 <input type="radio" name="jm1" />过量治疗
+        <input type="radio" name="jm1" />凯旋
+        <br />
+        <input type="radio" name="jm2"/>血统 <input type="radio" name="jm2" />欢欣
+        <input type="radio" name="jm2" />韧性
+        <br />
+        <input type="radio" name="jm3" />致命一击 <input type="radio" name="jm3" />砍倒
+        <input type="radio" name="jm3" />坚毅不倒
+        <br />
+        <p>主宰</p>
+        <input type="radio" name="zz0" />电刑 <input type="radio" name="zz0" />掠食者
+        <input type="radio" name="zz0" />黑暗收割 <input type="radio" name="zz0" />丛刃
+        <br />
+        <input type="radio" name="zz1" />恶意中伤 <input type="radio" name="zz1" />血之滋味
+        <input type="radio" name="zz1" />猛然冲击
+        <br />
+        <input type="radio"  name="zz2"/>幽灵魄罗 <input type="radio" name="zz2" />僵尸守卫
+        <input type="radio" name="zz2"/>眼球收集器
+        <br />
+        <input type="radio" name="zz3"/>无情猎手 <input type="radio" name="zz3"/>终极猎人
+        <input type="radio" name="zz3"/>零星猎手 <input type="radio" name="zz3"/>寻宝猎人
+        <br />
+        <p>巫术</p>
+        <input type="radio" name="ws0" />艾黎 <input type="radio" name="ws0" />奥术彗星
+        <input type="radio" name="ws0"/>相位猛冲
+        <br />
+        <input type="radio" name="ws1"/>无效化发球 <input type="radio"name="ws1" />法力流细带
+        <input type="radio" name="ws1"/>灵光披风
+        <br />
+        <input type="radio"name="ws2" />超然 <input type="radio" name="ws2"/>绝对专注
+        <input type="radio"name="ws2" />迅捷
+        <br />
+        <input type="radio" name="ws3"/>水上行走 <input type="radio" name="ws3"/>风暴聚集
+        <input type="radio" name="ws3"/>焦灼
+        <br />
+        <p>坚决</p>
+        <input type="radio" name="jj0" />不灭之握 <input type="radio" name="jj0"/>余震
+        <input type="radio" name="jj0"/>守护者
+        <br />
+        <input type="radio" name="jj1" />护盾猛击 <input type="radio" name="jj1" />爆破
+        <input type="radio" name="jj1"/>生命源泉
+        <br />
+        <input type="radio" name="jj2"/>调节 <input type="radio" name="jj2" />复苏之风
+        <input type="radio" name="jj2"/>骸骨镀层
+        <br />
+        <input type="radio" name="jj3" />坚定 <input type="radio" name="jj3" />过度生长
+        <input type="radio" name="jj3"/>复苏
+        <p>启迪</p>
+        <input type="radio" name="qd0" />冰川增幅 <input type="radio" name="qd0" />启封的秘籍
+        <input type="radio" name="qd0"/>先攻
+        <br />
+        <input type="radio" name="qd1" />神器之靴 <input type="radio" name="qd1"/>海克斯科技闪现罗网
+        <input type="radio" name="qd1"/>完美时机
+        <br />
+        <input type="radio" name="qd2" />小兵去质器 <input type="radio" name="qd2"/>未来市场
+        <input type="radio"  name="qd2"/>饼干配送
+        <br />
+        <input type="radio" />星界洞悉 <input type="radio" />时间扭曲补药
+        <input type="radio" />行进速率
+        <br />
+        <p>属性碎片</p>
+        <input type="radio" name="sxsp0" />+9适应之力 <input type="radio" name="sxsp0" />+10%攻击速度
+        <input type="radio" name="sxsp0"/>+8技能急速
+        <br>
+
+        <input type="radio" name="sxsp1"/>+9适应之力 <input type="radio"name="sxsp1" />+6护甲
+        <input type="radio"name="sxsp1" />+8魔法抗性 
+        <br>
+        <input type="radio"name="sxsp2" />+15-90生命值
+        <input type="radio" name="sxsp2"/>+6护甲 <input type="radio"name="sxsp2" />+8魔法抗性
+        <br>
+      </li>
+      <li>
+        <strong>装备</strong>
+        <p>出门装备</p>
+        <p style="color: blue; font-weight: 700">打野</p>
+        <input type="checkbox" />冰雹刀刃 <input type="checkbox" />灰烬小刀
+        <p style="color: blue; font-weight: 700">辅助</p>
+        <input type="checkbox" />窃法之刃 <input type="checkbox" />钢铁护肩
+        <input type="checkbox" />圣物之盾 <input type="checkbox" />幽魂镰刀
+        <p style="color: blue; font-weight: 700">多兰系列</p>
+        <input type="radio" />多兰剑 <input type="radio" />多兰盾
+        <input type="radio" />多兰戒
+        <p style="color: blue; font-weight: 700">其他</p>
+        <input type="radio" />长剑 <input type="radio" />短剑
+        <input type="radio" />女神泪 <input type="radio" />鞋子
+        <input type="radio" />生命药水 <input type="radio" />布甲
+        <input type="radio" />红水晶 <input type="radio" />蓝水晶
+        <input type="radio" />抗魔斗篷 <input type="radio" />增幅典籍
+        <input type="radio" />萃取 <input type="radio" />治疗宝珠
+        <input type="radio" />仙女护符
+
+        <p>神话装备</p>
+
+        <input type="checkbox" />幕刃 <input type="checkbox" />星蚀
+        <input type="checkbox" />暗爪 <input type="checkbox" />日炎圣盾
+        <input type="checkbox" />海克斯火箭腰带
+        <br />
+        <input type="checkbox" />峡谷制造者 <input type="checkbox" />暗夜收割者
+        <input type="checkbox" />痛苦面具 <input type="checkbox" />卢登
+        <input type="checkbox" />咳血
+        <br />
+        <input type="checkbox" />挺近 <input type="checkbox" />神分
+        <input type="checkbox" />三项 <input type="checkbox" />狂风
+        <input type="checkbox" />海妖
+        <br />
+        <input type="checkbox" />盾弓 <input type="checkbox" />卢登
+        <input type="checkbox" />舒瑞亚德战歌 <input type="checkbox" />薄暮法袍
+        <input type="checkbox" />钢铁烈阳之匣 <input type="checkbox" />帝国指令
+        <br />
+        <input type="checkbox" />月石再生器
+        <input type="checkbox" />破碎王后之冕 <input type="checkbox" />永霜
+        <input type="checkbox" />霜火护手 <input type="checkbox" />涡轮炼金罐
+      </li>
+    </ul>
+    <button>提交</button>
+    <div class="end"></div>
+    <script>
+      var btn = document.querySelector("button");
+      btn.addEventListener("mouseover", function () {
+        this.style.backgroundColor = "pink";
+        this.style.fontWeight = "700";
+      });
+      btn.addEventListener("mouseout", function () {
+        this.style.backgroundColor = "#fff";
+        this.style.fontWeight = 400;
+        this.style.fontWeight = "200";
+      });
+    </script>
+  </body>
+</html>
