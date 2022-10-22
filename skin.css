@@ -1,0 +1,25 @@
+.skin .small img{
+    width:230px;
+}
+.skin .small{
+    margin-top:40px;
+    margin-left:70px;
+}
+.skin .big{
+    height:500px;
+    background:url(images/skin/皮肤1.png) no-repeat;
+    margin-left:220px;
+    margin-top:100px;
+}
+.skin .big img{
+    float:left;
+    height: 650px;
+
+}
+.skin .small:hover{
+    cursor: pointer;
+}
+.skin .small .li{
+    margin-right:10px;
+    margin-left:10px;
+}

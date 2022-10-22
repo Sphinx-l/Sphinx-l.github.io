@@ -1,0 +1,37 @@
+  .talent {
+    display: none;
+  }
+  .talent li {
+    background-color: black;
+    margin: 30px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .talent li img {
+    float: left;
+    margin-right: 15px;
+  }
+ 
+  .talent {
+    display: none;
+  }
+  .talent i {
+    float: right;
+    text-align: center;
+    color: #fff;
+    margin-right: 250px;
+    line-height: 70px;
+    height: 70px;
+  }
+  .talent .big {
+    width: 56px;
+    margin-top: 7px;
+  }
+  .talent .middle {
+    width: 40px;
+    margin-top: 15px;
+  }
+  .talent .small {
+    margin-top: 20px;
+    width: 30px;
+  }

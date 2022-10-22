@@ -1,0 +1,53 @@
+.equipment .onstage {
+    color: #1db7a6;
+    font-weight: 600;
+    float: right;
+    margin-top: 30px;
+  }
+  .equipment .win {
+    color: #957c4d;
+    font-weight: 600;
+    margin-right: 10px;
+    float: right;
+    margin-top: 30px;
+  }
+  .equipment .content {
+    float: left;
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+  .equipment {
+    display: none;
+  }
+
+  .equipment .content {
+    width: 500px;
+    height: 500px;
+    background-color: #b59758;
+  }
+  .equipment .equipmenthead {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px grey solid;
+  }
+  .ehleft {
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: #ede4d1;
+    height: 50px;
+  }
+  .ehright {
+    font-size: 15px;
+    margin-left: 40px;
+    float: right;
+    color: #4d514d;
+    height: 50px;
+    line-height: 50px;
+  }
+  .listdetail {
+    margin-top: 30px;
+  }
+  .listdetail img {
+    margin-left: 20px;
+  }
