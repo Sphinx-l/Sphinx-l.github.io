@@ -43,6 +43,9 @@
         width: 100%;
         height: 200px;
       }
+      textarea{
+        display:inline;
+      }
     </style>
   </head>
   <body>
@@ -65,33 +68,35 @@
         <br />
         P
         <br />
-        <p>技能图标</p>
+        技能图标
         <input type="text" />
-        <p>技能描述</p>
+        技能描述
         <textarea name="" id=""></textarea>
+        <br />
         Q
         <br />
-        <p>技能图标</p>
+        技能图标
         <input type="text" />
-        <p>技能描述</p>
+        技能描述
         <textarea name="" id=""></textarea>
-        W
+        <br />W
         <br />
-        <p>技能图标</p>
+        技能图标
         <input type="text" />
-        <p>技能描述</p>
+        技能描述
         <textarea name="" id=""></textarea>
-        E
+        <br />E
         <br />
-        <p>技能图标</p>
+        技能图标
         <input type="text" />
-        <p>技能描述</p>
+        技能描述
         <textarea name="" id=""></textarea>
+        <br />
         R
         <br />
-        <p>技能图标</p>
+        技能图标
         <input type="text" />
-        <p>技能描述</p>
+        技能描述
         <textarea name="" id=""></textarea>
       </li>
       <li>
@@ -148,9 +153,9 @@
           <option value="">相位猛冲</option>
         </select>
         <select>
-          <input type="radio" name="ws1" />无效化发球
-          <input type="radio" name="ws1" />法力流细带
-          <input type="radio" name="ws1" />灵光披风
+          <option value="">无效化发球</option>
+          <option value="">法力流细带</option>
+          <option value="">灵光披风</option>
         </select>
         <select>
           <option>超然</option>
@@ -159,68 +164,80 @@
         </select>
 
         <select>
-          <input type="radio" name="ws3" />水上行走
-          <input type="radio" name="ws3" />风暴聚集
-          <input type="radio" name="ws3" />焦灼
+          <option>水上行走</option>
+            <option>风暴聚集</option>
+              <option>焦灼</option>
         </select>
         <p>坚决</p>
-        <input type="radio" name="jj0" />不灭之握
-        <input type="radio" name="jj0" />余震
-        <input type="radio" name="jj0" />守护者
-        <br />
-        <input type="radio" name="jj1" />护盾猛击
-        <input type="radio" name="jj1" />爆破
-        <input type="radio" name="jj1" />生命源泉
-        <br />
-        <input type="radio" name="jj2" />调节
-        <input type="radio" name="jj2" />复苏之风
-        <input type="radio" name="jj2" />骸骨镀层
-        <br />
-        <input type="radio" name="jj3" />坚定
-        <input type="radio" name="jj3" />过度生长
-        <input type="radio" name="jj3" />复苏
+        <select>
+          <option>不灭之握</option>
+          <option>守护者</option>
+          <option>余震</option>
+        </select>
+        <select>
+          <option>护盾猛击</option>
+          <option>爆破</option>
+          <option>生命源泉</option>
+        </select>
+        <select>
+          <option>调节</option>
+          <option>复苏之风</option>
+          <option>骸骨镀层</option>
+        </select>
+        <select>
+          <option>坚定</option>
+          <option>过度生长</option>
+          <option>复苏</option>
+        </select>
         <p>启迪</p>
-        <input type="radio" name="qd0" />冰川增幅
-        <input type="radio" name="qd0" />启封的秘籍
-        <input type="radio" name="qd0" />先攻
-        <br />
-        <input type="radio" name="qd1" />神器之靴
-        <input type="radio" name="qd1" />海克斯科技闪现罗网
-        <input type="radio" name="qd1" />完美时机
-        <br />
-        <input type="radio" name="qd2" />小兵去质器
-        <input type="radio" name="qd2" />未来市场
-        <input type="radio" name="qd2" />饼干配送
-        <br />
-        <input type="radio" />星界洞悉 <input type="radio" />时间扭曲补药
-        <input type="radio" />行进速率
-        <br />
+        <select>
+          <option>冰川增幅</option>
+          <option>启封的秘籍</option>
+          <option>先攻</option>
+        </select>
+        <select>
+          <option>神奇之靴</option>
+          <option>海克斯科技闪现罗网</option>
+          <option>完美时机</option>
+        </select>
+        <select>
+          <option>小兵去质器</option>
+          <option>未来市场</option>
+          <option>饼干配送</option>
+        </select>
+        <select>
+          <option>星界洞悉</option>
+          <option>时间扭曲补药</option>
+          <option>行进速率</option>
+        </select>
         <p>属性碎片</p>
-        <input type="radio" name="sxsp0" />+9适应之力
-        <input type="radio" name="sxsp0" />+10%攻击速度
-        <input type="radio" name="sxsp0" />+8技能急速
-        <br />
-
-        <input type="radio" name="sxsp1" />+9适应之力
-        <input type="radio" name="sxsp1" />+6护甲
-        <input type="radio" name="sxsp1" />+8魔法抗性
-        <br />
-        <input type="radio" name="sxsp2" />+15-90生命值
-        <input type="radio" name="sxsp2" />+6护甲
-        <input type="radio" name="sxsp2" />+8魔法抗性
-        <br />
+        <select>
+          <option>+9适应之力</option>
+          <option>+10攻击速率</option>
+          <option>+8技能急速</option>
+        </select>
+        <select>
+          <option>+9适应之力</option>
+          <option>+6护甲</option>
+          <option>+8魔法抗性</option>
+        </select>
+        <select>
+          <option>+15-90生命值</option>
+          <option>+6护甲</option>
+          <option>+8魔法抗性</option>
+        </select>
       </li>
       <li>
         <strong>装备</strong>
         <p>出门装备</p>
         <p style="color: blue; font-weight: 700">打野</p>
-        <option>冰雹刀刃</option>
-        灰烬小刀
+        <input type="radio">冰雹刀刃
+        <input type="radio">灰烬小刀
         <p style="color: blue; font-weight: 700">辅助</p>
-        <option>窃法之刃</option>
-        钢铁护肩
-        <option>圣物之盾</option>
-        幽魂镰刀
+        <input type="radio">窃法之刃
+        <input type="radio">钢铁护肩
+        <input type="radio">圣物之盾
+        <input type="radio">幽魂镰刀
         <p style="color: blue; font-weight: 700">多兰系列</p>
         <input type="radio" />多兰剑 <input type="radio" />多兰盾
         <input type="radio" />多兰戒
@@ -230,8 +247,9 @@
         <input type="radio" />生命药水 <input type="radio" />布甲
         <input type="radio" />红水晶 <input type="radio" />蓝水晶
         <input type="radio" />抗魔斗篷 <input type="radio" />增幅典籍
-        <input type="radio" />萃取 <input type="radio" />治疗宝珠
-        <input type="radio" />仙女护符 神话装备
+        <br>
+        <strong>神话装备</strong>
+        <br>
         <select>
           <option>幕刃</option>
           <option>星蚀</option>
@@ -262,7 +280,6 @@
         </select>
       </li>
     </form>
-
     <button>提交</button>
     <div class="end"></div>
     <script>
