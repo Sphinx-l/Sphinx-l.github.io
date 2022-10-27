@@ -1,3 +1,6 @@
+.scene img{
+    width:100%;
+}
 html {
   height: 100%;
   overflow: hidden;
@@ -90,4 +93,5 @@ and (orientation : portrait) {
     width: 90%;
     height: 90%;
     margin: 5%;
+}
 }
