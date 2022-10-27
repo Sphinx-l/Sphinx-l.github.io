@@ -1,384 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontfamily.css">
-    <link rel="stylesheet" href="normalize.css">
-
-    <title>英雄联盟官网</title>
-    <style>
-@font-face {
-  font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1666443062790') format('truetype');
-}
-
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 40px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-        body{
-            background-color: #e3e2e2;
-        }
-        *{
-            padding:0;
-            margin: 0;
-        }
-        a{
-            text-decoration: none;
-            color:black;
-        }
-        .head {
-            background:url(	https://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_6d1b97f19e1eb5a1533d3ebdf2fc89d3/0) no-repeat;
-            height: 350px;
-        }
-        .head .logo{
-            background-color:rgba(48, 48, 47,.6);
-            height:85px;
-            width: 100%;
-            position:relative;
-        }
-        .head .logo img{
-            float:left;
-            height: 80px;
-            width: 180px;
-            margin-left:230px;
-        }
-        .head .logo li{
-            width: 180px;
-            line-height: 80px;
-            text-align: center;
-            color:#fff;
-        }
-        .head .logo p{
-            color:#fff;
-            float:right;
-            margin-right:100px;
-            text-align: center;
-            line-height: 80px;
-        }
-        .head .logo p a{
-color:rgb(255, 229, 153);
-        }
-        .menu{
-            background-color: #fff;
-            height:500px;
-            margin-top:30px;
-        }
-        li{
-            list-style: none;
-            float:left;
-        }
-        li img{
-            height: 80px;
-            width: 80px;
-        }
-        .location{
-            overflow:hidden;
-
-        }
-        .location li{
-            float:left;
-            height:60px;
-            text-align: center;
-            line-height:60px;
-            margin-right:100px;
-            font-size:18px;
-        }
-        .location a:hover{
-            color:#1da6ba;
-            font-weight: 700;
-        }
-        .menuleft{
-            float:left;
-            margin-left:50px;
-            width:100px;
-            height:60px;
-            line-height:60px;
-            text-align: center;
-            border-left:8px #1da6ba solid;
-            margin-right:50px;
-            font-size:25px;
-        }
-        .hero{
-            margin-left:80px;
-            margin-top:20px;
-        }
-        .hero li{
-            margin-right:50px;
-            margin-bottom:30px;
-        }
-        .hero p{
-            width:90px;
-            text-align:center;
-        }
-        .hero p:hover{
-            color:#1da6ba;
-        }
-        .border{
-            border-bottom:2px #e0e2e2 solid;
-        }
-        .competition .detail{
-            position:relative;
-            left:800px;
-            top:200px;
-            width: 300px;
-        }
-        .competition .detail p{
-            color:#1da6ba;
-            font-weight: 700;
-        }
-        .tail{
-            height: 300px;
-        }
-        .tail .logo{
-            position: relative;
-            left:0;
-            top:120px;
-            width: 100%;
-            height: 100px;
-        }
-        .tail .logol{
-            background:url(images/logo1.png) no-repeat -212px 1px;
-            width: 200px;
-            height: 40px;
-            float:left;
-            margin-right:20px;
-        }
-        .tail .logor{
-            background:url(images/logo1.png) no-repeat -212px -80px;
-            width: 90px;
-            height: 37px;
-            float:left;
-            margin-right:200px;
-        }
-.tail .writer{
-    float:left;
-    width: 800px;
-    height: 37px;
-}
-.tail .writer img{
-    width:10%;
-    position: relative;
-    left: -50px;
-    top:25px;
-}
-.tail p{
-    display:inline-block;
-    margin-right:50px;
-    color:#d6b589;
-}
-iframe{
-    width: 150px;
-    float:left;
-    margin-top:-40px;
-    border:0;
-}
-    </style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>炫酷js和CSS3鼠标跟随图片序列动画特效|DEMO1_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
-<body>
-    <div class="head web-font">  
-        <div class="logo">
-            <img src="images/logo.png" alt="">
-            <ul>
-                <li>游戏资料</li>
-                <li>商城/合作</li>
-                <li>社区互动</li>
-                <li>赛事官网</li>
-                <li>自助系统</li>
-                <p>亲爱的召唤师，欢迎<a href="">登录</a></p>
-            </ul>
-        </div>
-    </div>
-    <div class="menu competition">
-        <div class="menuleft">赛事中心</div>
-        <ul class="location border">
-            <li><a href="">入围赛</a></li>
-            <li><a href="">小组赛</a></li>
-            <li><a href="">淘汰赛</a></li>
-        </ul>
-        <div class="detail"><img src="images/敬请期待.png" alt="">
-            <p>敬请期待
-                </p>
-            </div>
-    </div>
-    <div class="menu">
-        <div class="menuleft">英雄资料</div>
-        <ul class="location">
-            <li><a href="">所有英雄</a></li>
-            <li><a href="">战士</a></li>
-            <li><a href="">法师</a></li>
-            <li><a href="">刺客</a></li>
-            <li><a href="">坦克</a></li>
-            <li><a href="">射手</a></li>
-            <li><a href="">辅助</a></li>
-        </ul>
-        <ul class="hero">
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
-                <p>暗裔剑魔</p></a>
-            </li>
-            <li><a href="hero.html"><img src="images/hero/无双剑姬.png" alt="">
-                <p>无双剑姬</p></a>
-            </li>
-            <li><a href=""><img src="images/hero/万豪.png" alt="">
-                <p>腕豪</p></a>
-            </li>            
-        </ul> 
-    </div>
-  
-    <div class="menu competition">
-        <div class="menuleft">最新视频</div>
-        <ul class="location border">
-            <li><a href="">推荐</a></li>
-            <li><a href="">官方</a></li>
-            <li><a href="">娱乐</a></li>
-            <li><a href="">赛事</a></li>
-            <li><a href="">云顶之弈</a></li>
-            <li>
-            <a href="">教学</a>
-            </li>
-        </ul>
-        <div class="detail"><img src="images/敬请期待.png" alt="">
-            <p>敬请期待
-                </p>
-            </div>
+<style>
+.content .link{
+	color:black;
+	float:left;
+	margin-top:14px; 	
+	margin-right:-516px;
+	font-size:24px;
+}
+</style>
+	<body class="demo-1 loading">
+		<main>
+			
+			<div class="content">
+				<a class="link" href="../hero.html">进入官网</a>
+				<img class="content__img" src="../images/hero/万豪.png" alt="Some image" />
+				<img class="content__img" src="../images/hero/无双剑姬.png" alt="Some image" />
+				<img class="content__img" src="../images/hero/暗裔剑魔.png" alt="Some image" />
+				<img class="content__img" src="../images/hero/诺手.png" alt="Some image" />
+				<img class="content__img" src="../images/hero/青钢影.png" alt="Some image" />
+				<img class="content__img" src="../images/hero/芬妮.png" alt="Some image" />
+				<img class="content__img" src="../images/hero/卡特.png" alt="Some image" />
+				<img class="content__img" src="../images/hero/妖姬.png" alt="Some image" />
+				<img class="content__img" src="../images/hero/蜘蛛.png" alt="Some image" />
+				<img class="content__img" src="../images/hero/女警.png" alt="Some image" />
+				<img class="content__img" src="../images/skin/皮肤5.png" alt="Some image" />
+				<img class="content__img" src="../images/1.png" alt="Some image" />
+				<img class="content__img" src="../images/2.png" alt="Some image" />
+				<img class="content__img" src="../images/3.png" alt="Some image" />
+				<img class="content__img" src="../images/skin/皮肤8.png" alt="Some image" />
+				<img class="content__img" src="../images/skin/皮肤6.png" alt="Some image" />
+				<h3 class="content__title">LOL</h3>
+			</div><!--/content-->
 
-    </div>
-    <div class="tail web-font">
-        <div class="logo">
-            <iframe src="boy.svg" style="margin-right:50px"></iframe>
-            <div class="logol"></div>
-        <div class="logor"></div>  
-        <div class="writer">
-
-
-            <p><strong>
-                <span class="iconfont">&#xe60e;</span>
-                           作者：</strong>&nbsp;刘俊岐</p>
-
-            <p><strong>
-                <span class="iconfont">&#xe6d5;</span>
-                上次编辑日期:</strong>&nbsp;2022-10-23</p>
-            
-            <p><strong> <span class="iconfont"> &#xe856;</span>联系方式：</strong>
-            </p>
-
-            <img src="images/qrcode.jpg" alt="">
-        </div>  
-
-        <iframe src="girl.svg" style="float:right"></iframe>
-    </div>
-
-    </div>
-
-
-
-
-
-</body>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script></body>
 </html>
