@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>暗裔剑魔 亚托克斯</title>
     <link rel="stylesheet" href="fontfamily.css" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skill.css" />
     <link rel="stylesheet" href="css/talent.css" />
     <link rel="stylesheet" href="css/equipment.css" />
@@ -473,44 +473,12 @@
    <!--  <script src="jquery.js"></script> -->
     <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <script src="js/camroll_slider.js"></script> 
-     
+     <script src="js/switch.js"></script>
 
     <script>
+      //jquery轮播图
        $("#my-slider").camRollSlider();
-      var skill = document.querySelector(".left").querySelector(".s");
-      var talent = document.querySelector(".left").querySelector(".t");
-      var equipment = document.querySelector(".left").querySelector(".e");
-      var skilldiv = document.querySelector(".skill");
-      var talentdiv = document.querySelector(".talent");
-      var skindiv = document.querySelector(".skin");
-      var skin = document.querySelector(".left").querySelector(".sk");
-      var equipmentdiv = document.querySelector(".equipment");
-      skill.addEventListener("mouseover", function () {
-        skilldiv.style.display = "block";
-        talentdiv.style.display = "none";
-        equipmentdiv.style.display = "none";
-        skindiv.style.display = "none";
-      });
-
-      talent.addEventListener("mouseover", function () {
-
-        skilldiv.style.display = "none";
-        talentdiv.style.display = "block";
-        equipmentdiv.style.display = "none";
-        skindiv.style.display = "none";
-      });
-      equipment.addEventListener("mouseover", function () {
-        skilldiv.style.display = "none";
-        talentdiv.style.display = "none";
-        equipmentdiv.style.display = "block";
-        skindiv.style.display = "none";
-      });
-      skin.addEventListener("mouseover", function () {
-        skilldiv.style.display = "none";
-        talentdiv.style.display = "none";
-        equipmentdiv.style.display = "none";
-        skindiv.style.display = "block";
-      });
+       //技能显示隐藏
       $(".skill img").click(function () {
         $(this).parent().parent().parent().find("p").hide();
         $(this).parent().siblings("p").show();

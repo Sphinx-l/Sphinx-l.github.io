@@ -36,43 +36,6 @@ body {
     --color-link-hover: #ffffff;
     --color-title: #232323;
 }
-
-.demo-3 {
-	--color-text: #320065;
-    --color-bg: #d02d55;
-    --color-link: #ffffff;
-    --color-link-hover: #000000;
-    --color-title: #320065;
-    --filter-img: sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg);
-}
-
-.demo-4 {
-	--color-text: #000000;
-    --color-bg: #e0fafb;
-    --color-link: #ff3a7e;
-    --color-link-hover: #000000;
-    --color-title: #f9dae5;
-}
-
-.demo-5 {
-	--color-text: #ffffff;
-    --color-bg: #485656;
-    --color-link: #000000;
-    --color-link-hover: #ffffff;
-    --color-title: #444c4c;
-    --filter-img: hue-rotate(70deg) contrast(70%);
-}
-
-.demo-6 {
-	--color-text: #fff;
-    --color-bg: #000;
-    --color-link: #f0f0f0;
-    --color-link-hover: #fff;
-    --color-title: #fff;
-    --img-maxwidth: none;
-    --blendmode-title: overlay;
-}
-
 /* Page Loader */
 .js .loading::before {
 	content: '';
