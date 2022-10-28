@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/talent.css" />
     <link rel="stylesheet" href="css/equipment.css" />
     <link rel="stylesheet" href="css/skin.css" />
+    <link href="css/camroll_slider.css" rel="stylesheet">
 
   </head>
   <style>
@@ -427,26 +428,55 @@
         </div>
       </div>
       <div class="right skin">
-      <div class="big"></div>
-        <ul class="small">
-          <li>
-            <img src="images/skin/皮肤1.png" alt="" class="small" />
-          </li>
-          <li>
-            <img src="images/skin/皮肤2.png" alt="" class="small" />
-          </li>
-          <li>
-            <img src="images/skin/皮肤3.png" alt="" class="small" />
-          </li>
-        </ul> -->
-
+      <div id="my-slider" class="crs-wrap">
+	      <div class="crs-screen">
+	        <div class="crs-screen-roll">
+	          <div class="crs-screen-item" style="background-image: url('images/skin/皮肤1.png')">
+	            <div class="crs-screen-item-content"><h1>仲裁圣骑&nbsp;亚托克斯</h1></div>
+	          </div>
+	          <div class="crs-screen-item" style="background-image: url('images/skin/皮肤2.png')">
+	            <div class="crs-screen-item-content"><h1>霸天剑魔&nbsp;亚托克斯</h1></div>
+	          </div>
+	          <div class="crs-screen-item" style="background-image: url('images/skin/皮肤3.png')">
+	            <div class="crs-screen-item-content"><h1>奥德赛&nbsp;亚托克斯</h1></div>
+	          </div>
+	          <div class="crs-screen-item" style="background-image: url('images/skin/皮肤8.png')">
+	            <div class="crs-screen-item-content"><h1>月蚀骑士&nbsp;亚托克斯</h1></div>
+	          </div>
+	          <div class="crs-screen-item" style="background-image: url('images/skin/皮肤5.png')">
+	            <div class="crs-screen-item-content"><h1>狂鲨&nbsp;亚托克斯</h1></div>
+	          </div>
+	          <div class="crs-screen-item" style="background-image: url('images/skin/皮肤6.png')">
+	            <div class="crs-screen-item-content"><h1>腥红之月&nbsp;亚托克斯</h1></div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="crs-bar">
+	        <div class="crs-bar-roll-current"></div>
+	        <div class="crs-bar-roll-wrap">
+	          <div class="crs-bar-roll">
+	            <div class="crs-bar-roll-item" style="background-image: url('images/skin/皮肤1.png')"></div>
+	            <div class="crs-bar-roll-item" style="background-image: url('images/skin/皮肤2.png')"></div>
+	            <div class="crs-bar-roll-item" style="background-image: url('images/skin/皮肤3.png')"></div>
+	            <div class="crs-bar-roll-item" style="background-image: url('images/skin/皮肤8.png')"></div>
+	            <div class="crs-bar-roll-item" style="background-image: url('images/skin/皮肤5.png')"></div>
+	            <div class="crs-bar-roll-item" style="background-image: url('images/skin/皮肤6.png')"></div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
 
       </div>
+
     </div>
 
-    <script src="jquery.js"></script> 
+   <!--  <script src="jquery.js"></script> -->
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/camroll_slider.js"></script> 
+     
 
     <script>
+       $("#my-slider").camRollSlider();
       var skill = document.querySelector(".left").querySelector(".s");
       var talent = document.querySelector(".left").querySelector(".t");
       var equipment = document.querySelector(".left").querySelector(".e");
@@ -463,6 +493,7 @@
       });
 
       talent.addEventListener("mouseover", function () {
+
         skilldiv.style.display = "none";
         talentdiv.style.display = "block";
         equipmentdiv.style.display = "none";
@@ -484,19 +515,6 @@
         $(this).parent().parent().parent().find("p").hide();
         $(this).parent().siblings("p").show();
       });
-
-      var imgs = document
-        .querySelector(".skin")
-        .querySelector(".small")
-        .querySelectorAll("img");
-      var bigimg = document.querySelector(".skin").querySelector(".big");
-      for (var i = 0; i < imgs.length; i++) {
-        imgs[i].onclick = function () {
-          console.log(1);
-          bigimg.style.backgroundImage = "url(" + this.src + ")";
-        };
-      } 
-
     </script>
   </body>
 </html>

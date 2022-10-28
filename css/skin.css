@@ -26,3 +26,20 @@
 .skin{
     display:none;
 }
+#my-slider {
+    width: 100%;
+    height: 800px;
+    color: white;
+  }
+
+  @media (max-width: 640px) {
+    #my-slider .crs-bar-roll-current {
+      width: 38px;
+      height: 38px;
+    }
+
+    #my-slider .crs-bar-roll-item {
+      width: 30px;
+      height: 30px;
+    }
+  }
