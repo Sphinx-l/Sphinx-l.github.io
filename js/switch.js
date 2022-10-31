@@ -7,28 +7,21 @@ var skindiv = document.querySelector(".skin");
 var skin = document.querySelector(".left").querySelector(".sk");
 var equipmentdiv = document.querySelector(".equipment");
 skill.addEventListener("mouseover", function () {
-  skilldiv.style.display = "block";
-  talentdiv.style.display = "none";
-  equipmentdiv.style.display = "none";
-  skindiv.style.display = "none";
+  $('.right').hide();
+  $('.skill').show();
 });
 
 talent.addEventListener("mouseover", function () {
-
-  skilldiv.style.display = "none";
-  talentdiv.style.display = "block";
-  equipmentdiv.style.display = "none";
-  skindiv.style.display = "none";
+  $('.right').hide();
+  $('.talent').show();
 });
 equipment.addEventListener("mouseover", function () {
-  skilldiv.style.display = "none";
-  talentdiv.style.display = "none";
-  equipmentdiv.style.display = "block";
-  skindiv.style.display = "none";
+  $('.right').hide();
+  $('.equipment').show();
 });
 skin.addEventListener("mouseover", function () {
-  skilldiv.style.display = "none";
-  talentdiv.style.display = "none";
-  equipmentdiv.style.display = "none";
-  skindiv.style.display = "block";
+  $('.right').hide();
+  $('.skin').show();
+  //加载轮播图
+  $("#my-slider").camRollSlider();
 });
