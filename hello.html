@@ -7,17 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="blur">123</button>
-    <input type="text"></inout>
+    <button >123</button>
 </body>
 <script src="js/jquery-1.11.0.min.js"></script>
 <script>
     $('button').click(function(){
-        $(this).parent().html('<input type="text" class=".blur"></input>');
+        $(this).parent().html('<input type="text" onblur="change()"></input>');
     })
-    $('input').keyup(function(e){
-        console.log(e.keyCode);
-        $(this).replaceWith('<button>'+$(this).val()+'</button>')
-    })
+     function change(){
+        $('input').replaceWith('<button>'+'1234'+'</button>')
+    ;
+    }
+
 </script>
 </html>
