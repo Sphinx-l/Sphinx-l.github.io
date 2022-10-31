@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fontfamily.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="grid.css">
     <title>小岐的lol</title>
     <style>
 @font-face {
@@ -33,10 +34,6 @@
             text-decoration: none;
             color:black;
         }
-        li{
-            list-style: none;
-            float:left;
-        }
         .head {
             background:url(	https://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_6d1b97f19e1eb5a1533d3ebdf2fc89d3/0) no-repeat;
             height: 350px;
@@ -49,14 +46,11 @@
         }
         .head .logo img{
             float:left;
-            height: 80px;
-            width: 180px;
-            margin-left:230px;
+            height: 100%;
         }
         .head .logo li{
-            width: 180px;
-            line-height: 80px;
-            text-align: center;
+            line-height:60px;
+            font-size: 20px;    
             color:#fff;
         }
         .head .logo p{
@@ -71,8 +65,12 @@ color:rgb(255, 229, 153);
         }
         .menu{
             background-color: #fff;
-            height:500px;
+            height:600px;
             margin-top:30px;
+        }
+        li{
+            list-style: none;
+            float:left;
         }
         li img{
             height: 80px;
@@ -87,7 +85,6 @@ color:rgb(255, 229, 153);
             height:60px;
             text-align: center;
             line-height:60px;
-            margin-right:100px;
             font-size:18px;
         }
         .location a:hover{
@@ -97,25 +94,26 @@ color:rgb(255, 229, 153);
         .menuleft{
             float:left;
             margin-left:50px;
-            width:100px;
-            height:60px;
-            line-height:60px;
+            height:85px;
+            line-height:85px;
             text-align: center;
             border-left:8px #1da6ba solid;
             margin-right:50px;
+        
             font-size:25px;
         }
         .hero{
             margin-left:80px;
             margin-top:20px;
-            border-bottom:2px #e0e2e2 solid;
+
         }
         .hero li{
-            margin-right:80px;
+            margin-top:30px;
+            margin-right:30px;
             margin-bottom:30px;
         }
         .hero p{
-            width:90px;
+            width:80px;
             text-align:center;
         }
         .hero p:hover{
@@ -184,14 +182,15 @@ iframe{
 </head>
 <body>
     <div class="head web-font">  
+        <div class="col-1"></div>
         <div class="logo">
             <img src="images/logo.png" alt="">
             <ul>
-                <li>游戏资料</li>
-                <li>商城/合作</li>
-                <li>社区互动</li>
-                <li>赛事官网</li>
-                <li>自助系统</li>
+                <li class="col-1">游戏资料</li>
+                <li class="col-1">商城/合作</li>
+                <li class="col-1">社区互动</li>
+                <li class="col-1">赛事官网</li>
+                <li class="col-1">自助系统</li>
                 <p>亲爱的召唤师，欢迎<a href="">登录</a></p>
             </ul>
         </div>
@@ -199,25 +198,24 @@ iframe{
     <div class="menu competition">
         <div class="menuleft">赛事中心</div>
         <ul class="location border">
-            <li><a href="">入围赛</a></li>
-            <li><a href="">小组赛</a></li>
-            <li><a href="">淘汰赛</a></li>
+            <li class="col-1"><a href="">入围赛</a></li>
+            <li class="col-1"><a href="">小组赛</a></li>
+            <li class="col-1"><a href="">淘汰赛</a></li>
         </ul>
         <div class="detail"><img src="images/敬请期待.png" alt="">
-            <p>敬请期待
-                </p>
+            <p>敬请期待</p>
             </div>
     </div>
     <div class="menu">
         <div class="menuleft">英雄资料</div>
-        <ul class="location">
-            <li><a href="">所有英雄</a></li>
-            <li><a href="">战士</a></li>
-            <li><a href="">法师</a></li>
-            <li><a href="">刺客</a></li>
-            <li><a href="">坦克</a></li>
-            <li><a href="">射手</a></li>
-            <li><a href="">辅助</a></li>
+        <ul class="location border">
+            <li class="col-1"><a href="">所有英雄</a></li>
+            <li class="col-1"><a href="">战士</a></li>
+            <li class="col-1"><a href="">法师</a></li>
+            <li class="col-1"><a href="">刺客</a></li>
+            <li class="col-1"><a href="">坦克</a></li>
+            <li class="col-1"><a href="">射手</a></li>
+            <li class="col-1"><a href="">辅助</a></li>
         </ul>
         <ul class="hero">
             <li><a href="hero.html"><img src="images/hero/暗裔剑魔.png" alt="">
@@ -298,12 +296,12 @@ iframe{
     <div class="menu competition">
         <div class="menuleft">最新视频</div>
         <ul class="location border">
-            <li><a href="">推荐</a></li>
-            <li><a href="">官方</a></li>
-            <li><a href="">娱乐</a></li>
-            <li><a href="">赛事</a></li>
-            <li><a href="">云顶之弈</a></li>
-            <li>
+            <li class="col-1"><a href="">推荐</a></li>
+            <li class="col-1"><a href="">官方</a></li>
+            <li class="col-1"><a href="">娱乐</a></li>
+            <li class="col-1"><a href="">赛事</a></li>
+            <li class="col-1"><a href="">云顶之弈</a></li>
+            <li class="col-1">
             <a href="">教学</a>
             </li>
         </ul>
