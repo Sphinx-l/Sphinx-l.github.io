@@ -1,0 +1,38 @@
+    .grid-container{
+        width: 100%; 
+        max-width: 1200px;      
+    }
+
+    /*-- 使用 cleafix 清除浮动 -- */ 
+    .row:before, 
+    .row:after {
+        content:"";
+          display: table ;
+        clear:both;
+    }
+
+    [class*='col-'] {
+        float: left; 
+        min-height: 1px; 
+        width: 16.66%; 
+        /*-- 设置列的左右间隙 -- */
+        padding: 12px; 
+    }
+
+    .col-1{ width: 10%; }
+    .col-2{ width: 20%; }
+    .col-3{ width: 30%;    }
+    .col-4{ width: 40%; }
+    .col-5{ width: 50%; }
+    .col-6{ width: 60%;   }
+    .col-7{ width: 70%; }
+    .col-8{ width: 80%; }
+    .col-9{ width: 90%;    }
+    .col-10{ width: 100%; }
+
+
+    .outline, .outline *{
+        outline: 1px solid #F6A1A1; 
+    }
+
+    
