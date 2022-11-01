@@ -18,7 +18,7 @@
   });
   //装备
   $(".equipment").on("click",'button',function(){
-    $(this).parent().find('.list').append('<div class="listdetail"><span class="equipmentbox"><img src="images/equipment/水银鞋.png" alt="" /><span class="onstage">48.12%</span><span class="win">51.14%</span></span></div>');
+    $(this).parent().find('.listdetail').eq(0).clone().appendTo($(this).parent().find('.list'));
   });
 $('.list').eq(0).on('click','img',function(){
   $(this).replaceWith(equipment1);
