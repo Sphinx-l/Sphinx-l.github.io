@@ -1,8 +1,10 @@
+
 .equipment .onstage {
     color: #1db7a6;
     font-weight: 600;
     float: right;
     margin-top: 30px;
+    cursor:pointer;
   }
   .equipment .win {
     color: #957c4d;
@@ -10,6 +12,7 @@
     margin-right: 10px;
     float: right;
     margin-top: 30px;
+    cursor:pointer;
   }
   .equipment .content {
     float: left;
