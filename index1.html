@@ -7,176 +7,10 @@
     <link rel="stylesheet" href="fontfamily.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="css/index1.css" />
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <title>小岐的lol</title>
-    <style>
-      @font-face {
-        font-family: "iconfont"; /* Project id  */
-        src: url("iconfont.ttf?t=1666443062790") format("truetype");
-      }
-
-      .iconfont {
-        font-family: "iconfont" !important;
-        font-size: 40px;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      body {
-        background-color: #e3e2e2;
-      }
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-      }
-      .head {
-        background: url(https://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_6d1b97f19e1eb5a1533d3ebdf2fc89d3/0)
-          no-repeat;
-        height: 350px;
-      }
-      .head .logo {
-        background-color: rgba(48, 48, 47, 0.6);
-        height: 85px;
-        width: 100%;
-        position: relative;
-      }
-      .head .logo img {
-        float: left;
-        height: 100%;
-      }
-      .head .logo li {
-        line-height: 60px;
-        font-size: 20px;
-        color: #fff;
-      }
-      .head .logo p {
-        color: #fff;
-        float: right;
-        margin-right: 100px;
-        text-align: center;
-        line-height: 80px;
-      }
-      .head .logo p a {
-        color: rgb(255, 229, 153);
-      }
-      .menu {
-        background-color: #fff;
-        height: 600px;
-        margin-top: 30px;
-      }
-      li {
-        list-style: none;
-        float: left;
-      }
-      li img {
-        height: 80px;
-        width: 80px;
-      }
-      .location {
-        overflow: hidden;
-      }
-      .location li {
-        float: left;
-        height: 60px;
-        text-align: center;
-        line-height: 60px;
-        font-size: 18px;
-      }
-      .location a:hover {
-        color: #1da6ba;
-        font-weight: 700;
-      }
-      .menuleft {
-        float: left;
-        margin-left: 50px;
-        height: 85px;
-        line-height: 85px;
-        text-align: center;
-        border-left: 8px #1da6ba solid;
-        margin-right: 50px;
-
-        font-size: 25px;
-      }
-      .hero {
-        margin-left: 80px;
-        margin-top: 20px;
-      }
-      .hero li {
-        margin-top: 30px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-      }
-      .hero p {
-        width: 80px;
-        text-align: center;
-      }
-      .hero p:hover {
-        color: #1da6ba;
-      }
-      .border {
-        border-bottom: 2px #e0e2e2 solid;
-      }
-      .competition .detail {
-        position: relative;
-        left: 800px;
-        top: 200px;
-        width: 300px;
-      }
-      .competition .detail p {
-        color: #1da6ba;
-        font-weight: 700;
-      }
-      .tail {
-        height: 300px;
-      }
-      .tail .logo {
-        position: relative;
-        left: 0;
-        top: 120px;
-        width: 100%;
-        height: 100px;
-      }
-      .tail .logol {
-        background: url(images/logo1.png) no-repeat -212px 1px;
-        width: 200px;
-        height: 40px;
-        float: left;
-        margin-right: 20px;
-      }
-      .tail .logor {
-        background: url(images/logo1.png) no-repeat -212px -80px;
-        width: 90px;
-        height: 37px;
-        float: left;
-        margin-right: 200px;
-      }
-      .tail .writer {
-        float: left;
-        width: 800px;
-        height: 37px;
-      }
-      .tail .writer img {
-        width: 10%;
-        position: relative;
-        left: -50px;
-        top: 25px;
-      }
-      .tail p {
-        display: inline-block;
-        margin-right: 50px;
-        color: #d6b589;
-      }
-      iframe {
-        width: 150px;
-        float: left;
-        margin-top: -40px;
-        border: 0;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <div class="head web-font">
@@ -189,9 +23,22 @@
           <li class="col-1">社区互动</li>
           <li class="col-1">赛事官网</li>
           <li class="col-1">自助系统</li>
-          <p>亲爱的召唤师，欢迎<a href="">登录</a></p>
+          <p>亲爱的召唤师，欢迎<span href="" class="logbtn">登录</span></p>
         </ul>
       </div>
+    </div>
+    <div class="logindiv">
+      <span class="close">x</span>
+      <form action="">
+        <div>
+          &nbsp;&nbsp;账号<input type="text" placeholder="请输入账号" />
+        </div>
+        <div>
+          &nbsp;&nbsp;密码<input type="password" placeholder="请输入密码" />
+        </div>
+
+        <button class="loginbtn">登录</button>
+      </form>
     </div>
     <div class="menu competition">
       <div class="menuleft">赛事中心</div>
@@ -286,4 +133,15 @@
       </div>
     </div>
   </body>
+  <script>
+    $(".logbtn").click(function () {
+      $(".logindiv").css("visibility", "visible");
+    });
+    $(".loginbtn").click(function () {
+      $(".logindiv").css("visibility", "hidden");
+    });
+    $(".close").click(function () {
+      $(".logindiv").css("visibility", "hidden");
+    });
+  </script>
 </html>
