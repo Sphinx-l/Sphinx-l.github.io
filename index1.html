@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/index1.css" />
-    <link rel="stylesheet" href="iconfont.css"/>
+    <link rel="stylesheet" href="iconfont.css" />
     <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <title>小岐的lol</title>
   </head>
@@ -23,8 +23,9 @@
           <li class="col-1">社区互动</li>
           <li class="col-1">赛事官网</li>
           <li class="col-1">自助系统</li>
-          <div class="welcomediv"><p>亲爱的召唤师，欢迎<span href="" class="logbtn">登录</span></p></div>
-  
+          <div class="welcomediv">
+            <p>亲爱的召唤师，欢迎<span href="" class="logbtn">登录</span></p>
+          </div>
         </ul>
       </div>
     </div>
@@ -32,14 +33,22 @@
       <span class="close">x</span>
       <form action="">
         <div>
-          &nbsp;&nbsp;账号<input type="text" placeholder="请输入账号" class="usernamediv" />
+          &nbsp;&nbsp;账号<input
+            type="text"
+            placeholder="请输入账号"
+            class="usernamediv"
+          />
         </div>
         <div>
-          &nbsp;&nbsp;密码<input type="password" placeholder="请输入密码" class="passworddiv"/>
+          &nbsp;&nbsp;密码<input
+            type="password"
+            placeholder="请输入密码"
+            class="passworddiv"
+          />
         </div>
 
         <button class="loginbtn" type="button">登录</button>
-        <div class="wrongpassword" >用户名或密码错误</div>
+        <div class="wrongpassword">用户名或密码错误</div>
         <div class="remind">(账号是ljq，密码是1234)</div>
       </form>
     </div>
@@ -70,7 +79,6 @@
         <button class="addhero">添加英雄</button>
       </ul>
     </div>
-
     <div class="menu competition">
       <div class="menuleft">赛事中心</div>
       <ul class="location border">
@@ -83,7 +91,6 @@
         <p>敬请期待</p>
       </div>
     </div>
-
 
     <div class="menu competition">
       <div class="menuleft">最新视频</div>
@@ -104,11 +111,9 @@
     </div>
     <div class="tail web-font">
       <div class="logo">
-        <iframe src="boy.svg" style="margin-right: 50px"></iframe>
-        <div class="logol">
-        </div>
-        <div class="logor">
-        </div>
+        <iframe src="images/boy.svg" style="margin-right: 50px"></iframe>
+        <div class="logol"></div>
+        <div class="logor"></div>
         <div class="writer">
           <p>
             <strong>
@@ -131,13 +136,26 @@
           <img src="images/qrcode.jpg" alt="" />
         </div>
 
-        <iframe src="girl.svg" style="float: right"></iframe>
+        <iframe src="images/girl.svg" style="float: right"></iframe>
       </div>
     </div>
   </body>
 
   <script type="text/javascript" src="js/login.js"></script>
   <script>
-
+    $(document).on("click", ".addhero", function () {
+      console.log($(this).parent().eq(1));
+      $(this).before(
+        `<li class="changehero"><a href="javascript:;"><img src="images/hero/无双剑姬.png" alt=""  /><p>无双剑姬</p></a></li>`
+      );
+    });
+    $(document).on("click", ".changehero", function () {
+      var hero =
+        "<select><option>万豪</option><option >卡特</option><option >奥拉夫</option><option >女警</option><option >妖姬</option><option >无双剑姬</option><option >暗裔剑魔</option><option >芬妮</option><option >蜘蛛</option><option >青钢影</option></select>";
+      $(this).replaceWith(hero);
+    });
+    $(document).on("blur", "select", function () {
+      $(this).replaceWith(`<li class="changehero"><a href="javascript:;"><img src="images/hero/${$(this).val()}.png" alt=""  /><p>${$(this).val()}</p></a></li>`);
+    });
   </script>
 </html>
