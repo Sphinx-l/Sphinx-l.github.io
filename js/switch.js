@@ -1,11 +1,9 @@
 var skill = document.querySelector(".left").querySelector(".s");
 var talent = document.querySelector(".left").querySelector(".t");
 var equipment = document.querySelector(".left").querySelector(".e");
-var skilldiv = document.querySelector(".skill");
-var talentdiv = document.querySelector(".talent");
-var skindiv = document.querySelector(".skin");
 var skin = document.querySelector(".left").querySelector(".sk");
-var equipmentdiv = document.querySelector(".equipment");
+var introduce=document.querySelector(".left").querySelector(".in");
+$('.introduce').show();
 skill.addEventListener("mouseover", function () {
   $('.right').hide();
   $('.skill').show();
@@ -24,4 +22,8 @@ skin.addEventListener("mouseover", function () {
   $('.skin').show();
   //加载轮播图
   $("#my-slider").camRollSlider();
+});
+introduce.addEventListener("mouseover", function () {
+  $('.right').hide();
+  $('.introduce').show();
 });

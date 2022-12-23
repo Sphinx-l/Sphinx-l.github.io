@@ -16,6 +16,8 @@
     height:500px;
     float:left;
     display:none;
+    font-size:20px;
+    line-height:40px;
   }
   form{
     display:none;

@@ -1,0 +1,403 @@
+-<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>暗裔剑魔 亚托克斯</title>
+    <link rel="stylesheet" href="fontfamily.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/talent.css" />
+    <link rel="stylesheet" href="css/equipment.css" />
+    <link rel="stylesheet" href="css/skin.css" />
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/introduce.css">
+    <link href="css/camroll_slider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/camroll_slider.js"></script>
+
+  </head>
+  <style>
+    
+  </style>
+
+  <body>
+    <div class="head"></div>
+    <div class="body">
+      <div class="left">
+        <div class="content">
+          <img src="images/hero/暗裔剑魔.png" alt="" />
+          <p><a href="" class="in">页面说明</a></p>
+          <p><a href="" class="s">技能介绍</a></p>
+          <p><a href="" class="t">天赋</a></p>
+          <p><a href="" class="e">出装推荐</a></p>
+          <p><a href="" class="sk">皮肤详情</a></p>
+        </div>
+      </div>
+      <div class="right introduce" id="introduce">
+        <span class="title col-9">页面玩法说明</span>
+                    <ul>
+                        <li class="col-9">左侧五个模块可触碰切换，表单的增删改查已融入每个模块</li>
+                        <li class="col-9">页面玩法说明：现在显示的就是页面玩法说明模块</li>
+                        <li class="col-9">技能介绍：五个技能，点击技能图标可切换技能，可修改技能描述</li>
+                        <li class="col-9">天赋：删除按钮可以删除整列</li>
+                        <li class="col-9">出装推荐：增删改查都有，点击图片或者胜率/登场率可修改，数字字段已在js中写好正则检验</li>
+                        <li class="col-9">皮肤详情：jquery插件轮播图</li>
+                    </ul>
+                    
+      </div>
+      <div class="right skill" id="skill">
+        <ul>
+          <li>
+            <a href="javascript:;">
+              <img src="images/skill/暗裔剑魔P.png" alt="" />
+            </a>
+            <p style="color: #fff" class="col-7">
+              亚托克斯的攻击造成额外的(5%-12%)最大生命值物理伤害并回复100%实际伤害值的生命值，对小兵时降低至25%，这个效果有（24-12）秒冷却时间。对英雄和大型野怪进行的攻击和技间缩短2秒。用暗裔之刃的边缘命中时会使这个效果的冷却时间缩短4秒对野怪最多造成100伤害。用技能命中多个目标时也仅会缩短一次冷却时间。
+              <button class="skillBtn">修改技能描述</button>
+            </p>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/skill/暗裔剑魔Q.png" alt="" />
+            </a>
+            <p style="color: #fff" class="col-7">
+              亚托克斯向下猛砸他的巨剑，并造成物理伤害。【暗裔利刃】可以再施放2次，每次都会提升伤害。每次挥击都能用剑锋来命中敌人，以造成短暂的击飞效果和更多伤害。
+              冷却时间：14/12/10/8/6
+              <button class="skillBtn">修改技能描述</button>
+            </p>
+          </li>
+
+          <li>
+            <a href="javascript:;">
+              <img src="images/skill/暗裔剑魔W.png" alt="" />
+            </a>
+            <p style="color: #fff" class="col-7">
+              亚托克斯猛砸地面，对命中的第一个敌人造成物理伤害和减速效果
+              英雄或大型野怪需要在秒内快速离开被影响的区域，否则就会被拖拽到中心并再次受到伤害。
+              冷却时间：26/23/20/17/14
+              <button class="skillBtn">修改技能描述</button>
+            </p>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/skill/暗裔剑魔E.png" alt="" />
+            </a>
+            <p style="color: #fff" class="col-7">
+              被动：亚托克斯获得治疗效果，相当于他对英雄造成的%非周期类伤害。<br />
+              主动：亚托克斯朝一个方向突进。 冷却时间：9/8/7/6/5
+              治疗效果百分比：20%
+              <button class="skillBtn">修改技能描述</button>
+            </p>
+          </li>
+
+          <li>
+            <a href="javascript:;"
+              ><img src="images/skill/暗裔剑魔R.png" alt=""
+            /></a>
+            <p style="color: #fff" class="col-7">
+              亚托克斯现出他的恶魔形态，持续秒。激活时，他会恐惧附近的敌方小兵并获得不断衰减的移动速度加成。当【大灭】效果存留时，他获得攻击力并收到提升过的治疗效果。
+              在参与击杀敌方英雄后，【大灭】效果会延长并且亚托克斯将在受到致命伤害时复活。
+              <button class="skillBtn">修改技能描述</button>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="right talent" id="talent">
+        <ul class="first">
+          <li>
+            <img src="images/talent/精密.png" class="big" />
+            <img src="images/talent/征服者.png" class="big" />
+            <img src="images/talent/凯旋.png" class="middle" />
+            <img src="images/talent/韧性.png" class="middle" />
+            <img
+              src="images/talent/坚毅不倒.png"
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/talent/坚决.png" class="middle" />
+            <img src="images/talent/复苏之风.png" class="middle" />
+            <img
+              src="images/talent/复苏.png"
+
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/talent/适应之力.png" class="small" />
+            <img src="images/talent/适应之力.png" class="small" />
+            <img src="images/talent/护甲.png" class="small" />
+            <i style="cursor:pointer">登场率:23.02% <button class="remove">删除</button></i>
+            <i>胜率:49.02%
+                
+            </i>
+          </li>
+          <li>
+            <img src="images/talent/精密.png" alt="" class="big" />
+            <img src="images/talent/征服者.png" alt="" class="big" />
+            <img src="images/talent/凯旋.png" alt="" class="middle" />
+            <img src="images/talent/韧性.png" alt="" class="middle" />
+            <img
+              src="images/talent/坚毅不倒.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/talent/坚决.png" alt="" class="middle" />
+            <img src="images/talent/复苏之风.png" alt="" class="middle" />
+            <img
+              src="images/talent/骸骨镀层.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/talent/适应之力.png" alt="" class="small" />
+            <img src="images/talent/适应之力.png" alt="" class="small" />
+            <img src="images/talent/护甲.png" alt="" class="small" />
+            <i>登场率:11.79% <button class="remove">删除</button></i>
+            <i>胜率:49.05%</i>
+          </li>
+          <li>
+            <img src="images/talent/巫术.png" alt="" class="big" />
+            <img src="images/talent/奥术彗星.png" alt="" class="big" />
+            <img src="images/talent/灵光披风.png" alt="" class="middle" />
+            <img src="images/talent/超然.png" alt="" class="middle" />
+            <img
+              src="images/talent/焦灼.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/talent/主宰.png" alt="" class="middle" />
+            <img src="images/talent/寻宝猎人.png" alt="" class="middle" />
+            <img
+              src="images/talent/猛然冲击.png"
+              alt=""
+              class="middle"
+              style="margin-right: 40px"
+            />
+            <img src="images/talent/适应之力.png" alt="" class="small" />
+            <img src="images/talent/适应之力.png" alt="" class="small" />
+            <img src="images/talent/护甲.png" alt="" class="small" />
+            <i>登场率:0.17%<button class="remove">删除</button></i>
+            <i>胜率:46.91%</i>
+          </li>
+        </ul>
+
+      </div>
+      <div class="right equipment">
+        <div class="content col-3">
+          <div class="equipmenthead">
+            <span class="ehleft">出门装推荐</span>
+            <span class="ehright">登场率</span>
+            <span class="ehright">胜率</span>
+          </div>
+          <span>点击装备或数字可以修改表单</span>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/equipment/多兰盾.png" alt="" />
+                <img src="images/equipment/生命药水.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+                <button class="delete">删除整行</button>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/equipment/多兰剑.png" alt="" />
+                <img src="images/equipment/生命药水.png" alt="sheng" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+                <button class="delete">删除整行</button>
+              </span>
+            </div>
+          </div>
+          <button class="equipmentbtn1">添加出门装</button>
+        </div>
+        <div class="content col-3">
+          <div class="equipmenthead">
+            <span class="ehleft">神话装推荐</span>
+            <span class="ehright">登场率</span>
+            <span class="ehright">胜率</span>
+            
+          </div>
+          <span>点击装备或数字可以修改表单</span>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/equipment/星蚀.png" alt="" />
+                <img src="images/equipment/大饮魔刀.png" alt="" />
+                <img src="images/equipment/赛瑞尔达的怨恨.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+                <button class="delete">删除整行</button>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/equipment/星蚀.png" alt="" />
+                <img src="images/equipment/赛瑞尔达的怨恨.png" alt="" />
+                <img src="images/equipment/大饮魔刀.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+                <button class="delete">删除整行</button>
+              </span>
+            </div>
+          </div>
+          <button class="equipmentbtn2">添加神话装</button>
+        </div>
+        <div class="content col-3">
+          <div class="equipmenthead">
+            <span class="ehleft">鞋子推荐</span>
+            <span class="ehright">登场率</span>
+            <span class="ehright">胜率</span>
+          </div>
+          <span>点击装备或数字可以修改表单</span>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/equipment/护甲鞋.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+                <button class="delete">删除整行</button>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/equipment/水银鞋.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+                <button class="delete">删除整行</button>
+              </span>
+            </div>
+          </div>
+          <button class="equipmentbtn3">添加鞋子</button>
+        </div>
+        <div class="content col-3">
+          <div class="equipmenthead">
+            <span class="ehleft">其余装备</span>
+            <span class="ehright">登场率</span>
+            <span class="ehright">胜率</span>
+          </div>
+          <span>点击装备或数字可以修改表单</span>
+          <div class="list">
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/equipment/绿甲.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+                <button class="delete">删除整行</button>
+              </span>
+            </div>
+            <div class="listdetail">
+              <span class="equipmentbox">
+                <img src="images/equipment/复活甲.png" alt="" />
+                <span class="onstage">48.12%</span>
+                <span class="win">51.14%</span>
+                <button class="delete">删除整行</button>
+              </span>
+            </div>
+          </div>
+          <button class="equipmentbtn4">添加其余装备</button> 
+        </div>
+      </div>
+      <div class="right skin">
+        <div id="my-slider" class="crs-wrap">
+          <div class="crs-screen">
+            <div class="crs-screen-roll">
+              <div
+                class="crs-screen-item"
+                style="background-image: url('images/skin/皮肤1.png')"
+              >
+                <div class="crs-screen-item-content">
+                  <h1 class="col-3">仲裁圣骑&nbsp;亚托克斯</h1>
+                </div>
+              </div>
+              <div
+                class="crs-screen-item"
+                style="background-image: url('images/skin/皮肤2.png')"
+              >
+                <div class="crs-screen-item-content">
+                  <h1>霸天剑魔&nbsp;亚托克斯</h1>
+                </div>
+              </div>
+              <div
+                class="crs-screen-item"
+                style="background-image: url('images/skin/皮肤3.png')"
+              >
+                <div class="crs-screen-item-content">
+                  <h1>奥德赛&nbsp;亚托克斯</h1>
+                </div>
+              </div>
+              <div
+                class="crs-screen-item"
+                style="background-image: url('images/skin/皮肤8.png')"
+              >
+                <div class="crs-screen-item-content">
+                  <h1>月蚀骑士&nbsp;亚托克斯</h1>
+                </div>
+              </div>
+              <div
+                class="crs-screen-item"
+                style="background-image: url('images/skin/皮肤5.png')"
+              >
+                <div class="crs-screen-item-content">
+                  <h1>狂鲨&nbsp;亚托克斯</h1>
+                </div>
+              </div>
+              <div
+                class="crs-screen-item"
+                style="background-image: url('images/skin/皮肤6.png')"
+              >
+                <div class="crs-screen-item-content">
+                  <h1>腥红之月&nbsp;亚托克斯</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="crs-bar">
+            <div class="crs-bar-roll-current"></div>
+            <div class="crs-bar-roll-wrap">
+              <div class="crs-bar-roll">
+                <div
+                  class="crs-bar-roll-item"
+                  style="background-image: url('images/skin/皮肤1.png')"
+                ></div>
+                <div
+                  class="crs-bar-roll-item"
+                  style="background-image: url('images/skin/皮肤2.png')"
+                ></div>
+                <div
+                  class="crs-bar-roll-item"
+                  style="background-image: url('images/skin/皮肤3.png')"
+                ></div>
+                <div
+                  class="crs-bar-roll-item"
+                  style="background-image: url('images/skin/皮肤8.png')"
+                ></div>
+                <div
+                  class="crs-bar-roll-item"
+                  style="background-image: url('images/skin/皮肤5.png')"
+                ></div>
+                <div
+                  class="crs-bar-roll-item"
+                  style="background-image: url('images/skin/皮肤6.png')"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/switch.js"></script>
+    <script src="js/equipment-add.js"></script>
+    <script src="js/modifySkill.js"></script>
+    <script src="js/deleteTalent.js"></script>
+    <script src="js/switchSkill.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>

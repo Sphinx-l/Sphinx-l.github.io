@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="iconfont.css"/>
     <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <title>小岐的lol</title>
-    <style></style>
   </head>
   <body>
     <div class="head web-font">
@@ -136,24 +135,9 @@
       </div>
     </div>
   </body>
-  <script>
-    document.cookie="username='ljq'";
-    document.cookie="password='1234'"
-    $(".logbtn").click(function () {
-      $(".logindiv").css("visibility", "visible");
-    });
-    $(".loginbtn").click(function () {
-     if($('.usernamediv').val()=='ljq' && $('.passworddiv').val()=='1234'){
-      $('.welcomediv').replaceWith('<div class="welcomediv"><p>亲爱的ljq,欢迎你</p></div>');
-      $(".logindiv").css("visibility", "hidden");
-     }
-     else{
-      $('.wrongpassword').show();
-     }
-    });
 
-    $(".close").click(function () {
-      $(".logindiv").css("visibility", "hidden");
-    });
+  <script type="text/javascript" src="js/login.js"></script>
+  <script>
+
   </script>
 </html>
