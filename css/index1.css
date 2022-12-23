@@ -59,6 +59,11 @@
     height: 600px;
     margin-top: 30px;
   }
+  .introduce{
+    font-size:24px;
+    color:red;
+    font-weight:700;
+  }
   li {
     list-style: none;
     float: left;
